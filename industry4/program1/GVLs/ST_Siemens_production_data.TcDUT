@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="ST_Siemens_production_data" Id="{317602a6-fc32-4584-8464-6fdf57b0eec2}">
+    <Declaration><![CDATA[TYPE ST_Siemens_production_data :
+STRUCT
+	Total_Liquid_in_Bottle : ARRAY [1..5] OF REAL;
+	LiquidA_in_Bottle : ARRAY [1..5] OF REAL;
+	LiquidB_in_Bottle : ARRAY [1..5] OF REAL;
+	Bottle_count : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

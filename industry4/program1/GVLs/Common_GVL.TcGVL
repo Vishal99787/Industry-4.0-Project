@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <GVL Name="Common_GVL" Id="{003a75e5-a684-4889-887e-34cd633fac65}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	// Scanned values from RFID tags
+	{attribute 'OPC.UA.DA' := '1'}
+	RFID_LiquidA AT %Q* : INT;
+	{attribute 'OPC.UA.DA' := '1'}
+	RFID_LiquidB AT %Q* : INT;
+	{attribute 'OPC.UA.DA' := '1'}
+	Alarm_reset  AT %Q* : BOOL;
+	
+	// Data from the Siemens Slave PLC
+	
+    {attribute 'OPC.UA.DA' := '1'}
+    {attribute 'OPC.UA.DA.StructuredType' := '1'}
+	stSiemens_data_inputs AT %I*  : ST_Siemens_data_inputs;
+	
+    {attribute 'OPC.UA.DA' := '1'}
+    {attribute 'OPC.UA.DA.StructuredType' := '1'}
+	stSiemens_data_outputs AT %I*  : ST_Siemens_data_Outputs;
+	
+    {attribute 'OPC.UA.DA' := '1'}
+    {attribute 'OPC.UA.DA.StructuredType' := '1'}
+	stSiemens_other_parameters AT %I*  : ST_Siemens_other_parameters;
+	
+    {attribute 'OPC.UA.DA' := '1'}
+    {attribute 'OPC.UA.DA.StructuredType' := '1'}
+	stSiemens_Siemens_production_data AT %I* : ST_Siemens_production_data;
+	
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

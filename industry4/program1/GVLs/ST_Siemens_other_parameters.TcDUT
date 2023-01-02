@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="ST_Siemens_other_parameters" Id="{6e736447-0546-4bdf-870d-d15d8d446715}">
+    <Declaration><![CDATA[TYPE ST_Siemens_other_parameters :
+STRUCT
+	Liquid_A_filled : BOOL;
+	Liquid_B_filled : BOOL;
+	Flow_ml_per_sec : REAL;
+	LiquidA_in_Bottle_ml : REAL;
+	LiquidB_in_Bottle_ml : REAL;
+	T02_Level_in_L : REAL;
+	T02_High_Level_limit : REAL;
+	T02_Low_Level_limit : REAL;		
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

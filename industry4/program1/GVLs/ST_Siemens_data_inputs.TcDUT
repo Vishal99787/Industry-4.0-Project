@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="ST_Siemens_data_inputs" Id="{993202e9-578c-4dab-89bb-2032aa3b051e}">
+    <Declaration><![CDATA[TYPE ST_Siemens_data_inputs :
+STRUCT
+	FIC_B102 : INT;
+	LIC_B101 : INT;
+	PS1_RFID_Station : BOOL;
+	PS2_Filling_Station : BOOL;
+	PS3_Quality_Station : BOOL;
+	PS4_End_of_Conveyor : BOOL;
+	T01_Low_level : BOOL;
+	T01_High_level : BOOL;	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
